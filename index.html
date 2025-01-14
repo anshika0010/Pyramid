@@ -36,7 +36,7 @@
 
   <body>
     <nav
-      class="bg-gray-100 mt-20 w-full max-w-screen-xl mx-auto py-4 px-8 rounded-xl shadow-md border border-gray-300"
+      class="bg-gray-100  w-full max-w-screen-xl mx-auto py-4 px-8 rounded-xl shadow-md border border-gray-300"
     >
       <div class="flex items-center justify-between">
         <!-- Logo or brand name -->
@@ -697,24 +697,28 @@
         <!-- Footer Bottom -->
         <div class="mt-12 border-t border-gray-700 pt-6">
           <div class="flex items-center justify-between text-gray-400">
-            <!-- Brand Logo and Links Section (Left) -->
-            <div class="flex items-center space-x-6">
+            <!-- Left Div: Logo -->
+            <div class="flex items-center w-full sm:w-auto">
               <img src="assets/Group 149.png" alt="Brand Logo" class="w-34 h-16" />
-              <div class="space-x-6 pl-52 text-black">
-                <a href="#" class="hover:text-red-600">Home</a>
-                <a href="#about" class="hover:text-red-600">About</a>
-                <a href="#service" class="hover:text-red-600">Services</a>
-                <a href="#contact" class="hover:text-red-600">Contact</a>
-              </div>
             </div>
-
-            <!-- Chat with Us (Right) -->
-            <div>
+        
+            <!-- Middle Div: Links -->
+            <div class="flex flex-1 justify-center mt-4 sm:mt-0">
+              <ul class="flex space-x-6 text-black">
+                <li><a href="#" class="hover:text-red-600">Home</a></li>
+                <li><a href="#about" class="hover:text-red-600">About</a></li>
+                <li><a href="#service" class="hover:text-red-600">Services</a></li>
+                <li><a href="#contact" class="hover:text-red-600">Contact</a></li>
+              </ul>
+            </div>
+        
+            <!-- Right Div: Chat with Us -->
+            <div class="w-full sm:w-auto mt-4 sm:mt-0">
               <a
                 href="https://wa.me/1234567890"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="flex items-center space-x-2 bg-green-500 text-white py-2 px-4 rounded-full hover:bg-green-600"
+                class="flex items-center space-x-2 bg-green-500 text-white py-2 px-4 rounded-full hover:bg-green-600 justify-center sm:justify-start"
               >
                 <i class="fab fa-whatsapp w-6 h-6"></i>
                 <span>Chat with Us</span>
@@ -722,6 +726,8 @@
             </div>
           </div>
         </div>
+        
+        
       </div>
     </footer>
     <script>
